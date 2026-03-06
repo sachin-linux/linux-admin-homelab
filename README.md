@@ -1,4 +1,4 @@
-#Linux Administrator HOmelab
+#Linux Administrator Homelab
 
 This repository documents my journey to becoming a Linux System Administrator.
 
