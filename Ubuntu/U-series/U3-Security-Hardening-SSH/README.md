@@ -1,28 +1,36 @@
-# Lab Title: U3-Security-Hardening-SSH
+# Lab Title: U3 – Security Hardening & SSH
 
 ## Objective
-Describe what this lab will teach or accomplish.
+Secure SSH access and perform basic server hardening.
 
 ## Prerequisites
-List software, configurations, or knowledge required.
+- Ubuntu server with SSH running
+- Access to sudo user
 
 ## Steps / Instructions
 
-### 1. Step one
-Describe the first step clearly.
+### 1. Create new user and assign sudo
+adduser newuser
+usermod -aG sudo newuser
 
-### 2. Step two
-...
+### 2. Configure SSH Key Authentication
+ssh-keygen -t ed25519
+cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
 
-### n. Final step
+### 3. Disable root login and change SSH port
+Edit /etc/ssh/sshd_config:
+PermitRootLogin no
+Port 2222
+Restart SSH:
+sudo systemctl restart ssh
 
 ## Commands Used
-List all commands used in this lab.
+adduser, usermod, ssh-keygen, cat, sudo systemctl restart ssh
 
 ## Skills Learned
-- Skill 1
-- Skill 2
-- Skill 3
+- User creation and sudo management
+- SSH key-based authentication
+- Basic server hardening
 
 ## Result / Verification
-Describe how to verify the lab was completed successfully.
+SSH login works with key, root login disabled, custom port applied.

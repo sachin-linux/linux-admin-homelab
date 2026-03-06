@@ -1,28 +1,42 @@
-# Lab Title: U1-Linux-Basics
+# Lab Title: U1 – Linux Basics
 
 ## Objective
-Describe what this lab will teach or accomplish.
+Learn Ubuntu server installation, VirtualBox setup, and basic Linux commands.
 
 ## Prerequisites
-List software, configurations, or knowledge required.
+- Ubuntu Server ISO
+- VirtualBox installed
+- Basic terminal knowledge
 
 ## Steps / Instructions
 
-### 1. Step one
-Describe the first step clearly.
+### 1. Install Ubuntu Server on VirtualBox
+Follow standard installation.
 
-### 2. Step two
-...
+### 2. Verify SSH service
+```bash
+sudo systemctl status ssh
+```
 
-### n. Final step
+### 3. Check IP Address
+```bash
+ip addr
+```
+
+### 4. Test SSH Connection
+```bash
+ssh user@server-ip
+```
 
 ## Commands Used
-List all commands used in this lab.
+ip addr, systemctl status ssh, ssh user@server-ip
 
 ## Skills Learned
-- Skill 1
-- Skill 2
-- Skill 3
+- Ubuntu Server installation
+- Virtual machine setup
+- SSH service verification
+- Basic networking commands
+- Remote administration using SSH
 
 ## Result / Verification
-Describe how to verify the lab was completed successfully.
+Ubuntu Server installed and SSH access verified.

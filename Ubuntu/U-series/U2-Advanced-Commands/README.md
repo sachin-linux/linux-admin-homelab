@@ -1,28 +1,30 @@
-# Lab Title: U2-Advanced-Commands
+# Lab Title: U2 – Advanced Commands
 
 ## Objective
-Describe what this lab will teach or accomplish.
+Master essential Linux commands for file, directory, and process management.
 
 ## Prerequisites
-List software, configurations, or knowledge required.
+- Ubuntu server running
+- SSH access
 
 ## Steps / Instructions
 
-### 1. Step one
-Describe the first step clearly.
+### 1. File and Directory Management
+ls, cp, mv, rm
 
-### 2. Step two
-...
+### 2. Permissions
+chmod, chown, chgrp
 
-### n. Final step
+### 3. Process & Job Control
+ps, top, jobs, kill
 
 ## Commands Used
-List all commands used in this lab.
+ls, cp, mv, rm, chmod, chown, chgrp, ps, top, jobs, kill
 
 ## Skills Learned
-- Skill 1
-- Skill 2
-- Skill 3
+- File and directory management
+- User and group permissions
+- Process monitoring and job control
 
 ## Result / Verification
-Describe how to verify the lab was completed successfully.
+Files managed correctly, permissions applied, processes controlled.
