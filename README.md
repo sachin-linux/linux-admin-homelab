@@ -1,8 +1,25 @@
 # Linux Administrator Learning Repository
 
-This repository documents my hands-on Linux administration journey.
+This repository documents my journey learning **Linux System Administration** through practical labs and  hands-on exercise.
 
-## Ubuntu Track (U-Series)
+The goal of this project is to build real-world Linux administration skills including
+
+- User and group management
+- SSH security and hardening
+- Service management 
+- Log monitoring and troubleshooting
+- Disk and storage management
+- Backup strategies
+- Job scheduling and automation
+- Networking troubleshooting
+- Firewall configuration
+- Bash scripting
+
+All labs are performed on a linux environment using **VirtualBox + Ubuntu/Kali**.
+
+---
+
+## Repository Structure
 
 U1 - Linux Basic
 U2 - SSH Hardening
@@ -15,4 +32,34 @@ U8 - Networking Troubleshooting
 U9 - Firewall (ufw / iptables)
 U10 - Basic Bash Scripting
 
-Each Module Contains commands, theory, and practical labs performed on Ubuntu
+## Labs
+
+Each Module in this repository includes:
+
+- Practical lab exercises
+- Real Linux administration commands
+- Troubleshooting scenarios
+- Notes and explanations
+
+--- 
+
+## Environment Used
+
+- Virtualbox
+- Ubuntu Linux
+- Kali Linux
+- OpenSSH
+- Linux CLI tools
+
+---
+
+## Goal
+
+To become a **professional Linux System Administrator** through structured practice and real-world labs.
+
+---
+
+## Author
+
+Sachin M
+Linux Administration Learning Journey
