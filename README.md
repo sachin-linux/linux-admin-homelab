@@ -1,5 +1,13 @@
 # Linux Administrator Learning Repository
 
+# Linux Administrator Learning Repository
+
+![Linux](https://img.shields.io/badge/Linux-Administration-blue)
+![Ubuntu](https://img.shields.io/badge/OS-Ubuntu-orange)
+![Bash](https://img.shields.io/badge/Scripting-Bash-green)
+![VirtualBox](https://img.shields.io/badge/Lab-VirtualBox-blueviolet)
+![OpenSSH](https://img.shields.io/badge/Security-OpenSSH-lightgrey)
+
 This repository documents my journey learning **Linux System Administration** through practical labs and  hands-on exercise.
 
 The goal of this project is to build real-world Linux administration skills including
