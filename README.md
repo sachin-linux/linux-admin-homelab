@@ -1,7 +1,5 @@
 # Linux Administrator Learning Repository
 
-# Linux Administrator Learning Repository
-
 ![Linux](https://img.shields.io/badge/Linux-Administration-blue)
 ![Ubuntu](https://img.shields.io/badge/OS-Ubuntu-orange)
 ![Bash](https://img.shields.io/badge/Scripting-Bash-green)
@@ -49,7 +47,7 @@ U10 - Basic Bash Scripting
 | U3 | Service Management (systemd) | ✅ Completed |
 | U4 | Logs (journalctl deep dive) | ✅ Completed |
 | U5 | Disk Management (LVM) | ✅ Completed |
-| U6 | Backup Concepts | ⏳ In Progress |
+| U6 | Backup Concepts | ✅ Completed |
 | U7 | Cron Automation | ⏳ Pending |
 | U8 | Networking Troubleshooting | ⏳ Pending |
 | U9 | Firewall (ufw / iptables) | ⏳ Pending |
