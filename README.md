@@ -8,7 +8,7 @@
 ![VirtualBox](https://img.shields.io/badge/Lab-VirtualBox-blueviolet)
 ![OpenSSH](https://img.shields.io/badge/Security-OpenSSH-lightgrey)
 
-This repository documents my journey learning **Linux System Administration** through practical labs and  hands-on exercise.
+This repository documents my journey learning **Linux System Administration** through practical labs and hands-on exercise.
 
 The goal of this project is to build real-world Linux administration skills including
 
@@ -23,7 +23,7 @@ The goal of this project is to build real-world Linux administration skills incl
 - Firewall configuration
 - Bash scripting
 
-All labs are performed on a linux environment using **VirtualBox + Ubuntu/Kali**.
+All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**.
 
 ---
 
@@ -39,6 +39,21 @@ U7 - Cron Automation
 U8 - Networking Troubleshooting
 U9 - Firewall (ufw / iptables)
 U10 - Basic Bash Scripting
+
+## Learning Progress
+
+| Module | Topic | Status |
+|------|------|------|
+| U1 | Linux Basic | ✅ Completed |
+| U2 | SSH Hardening | ✅ Completed |
+| U3 | Service Management (systemd) | ✅ Completed |
+| U4 | Logs (journalctl deep dive) | ✅ Completed |
+| U5 | Disk Management (LVM) | ✅ Completed |
+| U6 | Backup Concepts | ⏳ In Progress |
+| U7 | Cron Automation | ⏳ Pending |
+| U8 | Networking Troubleshooting | ⏳ Pending |
+| U9 | Firewall (ufw / iptables) | ⏳ Pending |
+| U10 | Basic Bash Scripting | ⏳ Pending |
 
 ## Labs
 
