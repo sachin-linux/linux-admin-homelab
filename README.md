@@ -49,7 +49,7 @@ U10 - Basic Bash Scripting
 | U5 | Disk Management (LVM) | ✅ Completed |
 | U6 | Backup Concepts | ✅ Completed |
 | U7 | Cron Automation | ✅ Completed |
-| U8 | Networking Troubleshooting | ⏳ Pending |
+| U8 | Networking Troubleshooting | ✅ Completed |
 | U9 | Firewall (ufw / iptables) | ⏳ Pending |
 | U10 | Basic Bash Scripting | ⏳ Pending |
 
