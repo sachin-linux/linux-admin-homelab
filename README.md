@@ -48,7 +48,7 @@ U10 - Basic Bash Scripting
 | U4 | Logs (journalctl deep dive) | ✅ Completed |
 | U5 | Disk Management (LVM) | ✅ Completed |
 | U6 | Backup Concepts | ✅ Completed |
-| U7 | Cron Automation | ⏳ Pending |
+| U7 | Cron Automation | ✅ Completed |
 | U8 | Networking Troubleshooting | ⏳ Pending |
 | U9 | Firewall (ufw / iptables) | ⏳ Pending |
 | U10 | Basic Bash Scripting | ⏳ Pending |
