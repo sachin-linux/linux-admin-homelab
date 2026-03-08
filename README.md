@@ -50,7 +50,7 @@ U10 - Basic Bash Scripting
 | U6 | Backup Concepts | ✅ Completed |
 | U7 | Cron Automation | ✅ Completed |
 | U8 | Networking Troubleshooting | ✅ Completed |
-| U9 | Firewall (ufw / iptables) | ⏳ Pending |
+| U9 | Firewall (ufw / iptables) | ✅ Completed |
 | U10 | Basic Bash Scripting | ⏳ Pending |
 
 ## Labs
