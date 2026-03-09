@@ -103,6 +103,28 @@ Each Module in this repository includes:
 
 ---
 
+## Lab Environment
+
+All labs were performed inside a controlled virtual lab environment.
+
+Host Machine
+│
+├── VirtualBox
+│
+├── Ubuntu VM (Linux Administration Practice)
+│
+└── Kali Linux VM (Security / SSH / Networking Tests)
+
+The lab setup allows safe testing of:
+
+- SSH hardening
+- firewall rules
+- service failures
+- networking troubleshooting
+- automation scripts
+
+---
+
 ## Goal
 
 To become a **professional Linux System Administrator** through structured practice and real-world labs.
