@@ -67,3 +67,10 @@ rm file.txt
 - Basic Linux command usage
 - Filesystem navigation
 - File management operation
+
+## Enviroment Used 
+
+Ubuntu Linux
+VirtualBox
+Linux CLI tools
+
