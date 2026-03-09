@@ -107,6 +107,7 @@ Each Module in this repository includes:
 
 All labs were performed inside a controlled virtual lab environment.
 
+```text
 Host Machine
 │
 ├── VirtualBox
@@ -114,6 +115,7 @@ Host Machine
 ├── Ubuntu VM (Linux Administration Practice)
 │
 └── Kali Linux VM (Security / SSH / Networking Tests)
+```
 
 The lab setup allows safe testing of:
 
