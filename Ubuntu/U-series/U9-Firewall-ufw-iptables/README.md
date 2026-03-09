@@ -26,19 +26,19 @@ Linux Administrators use firewalls to secure services, block unauthorized access
 
 ## Commands Learned
 
-- ufw status
-- ufw enable
-- ufw disable
-- ufw allow
-- ufw deny
-- ufw delete
-- ufw reset
-- ufw status numbered
-- ufw allow from <ip>
-- ufw allow <port>
-- ufw allow <port-range>
-- iptables -L
-- ss - tuln
+ufw status
+ufw enable
+ufw disable
+ufw allow
+ufw deny
+ufw delete
+ufw reset
+ufw status numbered
+ufw allow from <ip>
+ufw allow <port>
+ufw allow <port-range>
+iptables -L
+ss - tuln
 
 ---
 
@@ -168,4 +168,10 @@ sudo ufw delete <rule_number>
 - Troubleshooting blocked services
 - Basic IPTables inspection
 
+---
 
+## Environment Used
+
+Ubuntu Linux
+VirtualBox
+Linux CLI tools
