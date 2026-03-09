@@ -12,6 +12,18 @@ The goal of this project is to build real-world Linux administration skills incl
 
 ---
 
+## Project Overview
+
+| Category | Details |
+|--------|--------|
+| Project Type | Linux System Administration Lab |
+| Focus | Practical Linux administration skills |
+| Environment | VirtualBox with Ubuntu & Kali Linux |
+| Topics Covered | Users, SSH Hardening, Services, Logs, LVM, Backups, Cron, Networking, Firewall, Bash |
+| Learning Method | Hands-on labs and troubleshooting scenarios |
+
+---
+
 ## Table of Contents
 
 - [Skills Learned](#skills-learned)
