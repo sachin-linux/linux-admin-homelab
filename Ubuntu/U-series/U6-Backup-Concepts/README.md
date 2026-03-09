@@ -236,3 +236,12 @@ Skills Gained
 - Create compressed backups using tar
 - Restore lost files
 - Verify backup integrity
+
+---
+
+## Environments Used
+
+Ubuntu Linux
+VirtualBox
+Linux CLI tools
+
