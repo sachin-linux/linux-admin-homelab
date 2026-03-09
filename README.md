@@ -6,9 +6,25 @@
 ![VirtualBox](https://img.shields.io/badge/Lab-VirtualBox-blueviolet)
 ![OpenSSH](https://img.shields.io/badge/Security-OpenSSH-lightgrey)
 
-This repository documents my journey learning **Linux System Administration** through practical labs and hands-on exercise.
+This repository documents my journey learning **Linux System Administration** through practical labs and hands-on exercises.
 
 The goal of this project is to build real-world Linux administration skills including
+
+---
+
+## Table of Contents
+
+- [Skills Learned](#skills-learned)
+- [Repository Structure](#repository-structure)
+- [Learning Progress](#learning-progress)
+- [Real-World Troubleshooting Scenarios](#real-world-troubleshooting-scenarios)
+- [Labs](#labs)
+- [Environment Used](#environment-used)
+- [Goal](#goal)
+
+---
+
+## Skills Leaerned
 
 - User and group management
 - SSH security and hardening
@@ -27,7 +43,7 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 
 ## Repository Structure
 
-U1 - Linux Basic
+U1 - Linux Basics
 U2 - SSH Hardening
 U3 - Service Management (systemd)
 U4 - Logs (journalctl deep dive)
@@ -59,7 +75,7 @@ U10 - Basic Bash Scripting
 
 - Troubleshooting SSH connection failures
 - Diagnosing service startup issues
-- Investigating system logs using jounalctl
+- Investigating system logs using journalctl
 - Identifying blocked ports using firewall rules
 - Analyzing network connectivity problems
 - Automating repetitive tasks using Bash scripts
@@ -79,7 +95,7 @@ Each Module in this repository includes:
 
 ## Environment Used
 
-- Virtualbox
+- VirtualBox
 - Ubuntu Linux
 - Kali Linux
 - OpenSSH
