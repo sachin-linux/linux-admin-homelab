@@ -63,3 +63,10 @@ Application configuration
 - Log analysis 
 - Troubleshooting services
 - Monitoring authentication events
+
+---
+
+## Environment Used
+Ubuntu Linux
+VirtualBox
+Linux CLI tools
