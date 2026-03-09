@@ -24,20 +24,20 @@ Bash scripts allow administrators to automate repetitive tasks such as system mo
 ---
 
 ## Commands and Concepts
-
-nano 
-chmod +x
-./script.sh
-echo
-whoami
-date
-uptime
-df -h
-systemctl
-if
-else
-for
-while
+ 
+- nano 
+- chmod +x
+- ./script.sh
+- echo
+- whoami
+- date
+- uptime
+- df -h
+- systemctl
+- if
+- else
+- for
+- while
 
 ---
 
