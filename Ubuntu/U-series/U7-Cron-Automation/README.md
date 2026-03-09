@@ -52,7 +52,7 @@ sudo crontab -u username -e
 ## Cron Syntax
 
 Cron uses five time followed by the command.
-
+```text
 * * * * * command
 | | | | |
 | | | | ----- Day of week (0-7) Sunday = 0
@@ -60,6 +60,7 @@ Cron uses five time followed by the command.
 | | --------- Day of month (1-31)
 | ----------- Hour (0-23)
 ------------- Minute (0-59)
+```
 
 Example 
 
