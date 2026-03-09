@@ -51,7 +51,7 @@ U10 - Basic Bash Scripting
 | U7 | Cron Automation | ✅ Completed |
 | U8 | Networking Troubleshooting | ✅ Completed |
 | U9 | Firewall (ufw / iptables) | ✅ Completed |
-| U10 | Basic Bash Scripting | ⏳ Pending |
+| U10 | Basic Bash Scripting | ✅ Completed |
 
 ## Labs
 
