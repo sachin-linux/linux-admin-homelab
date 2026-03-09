@@ -53,6 +53,19 @@ U10 - Basic Bash Scripting
 | U9 | Firewall (ufw / iptables) | ✅ Completed |
 | U10 | Basic Bash Scripting | ✅ Completed |
 
+---
+
+## Real-World Troubleshooting Scenarios
+
+- Troubleshooting SSH connection failures
+- Diagnosing service startup issues
+- Investigating system logs using jounalctl
+- Identifying blocked ports using firewall rules
+- Analyzing network connectivity problems
+- Automating repetitive tasks using Bash scripts
+
+---
+
 ## Labs
 
 Each Module in this repository includes:
