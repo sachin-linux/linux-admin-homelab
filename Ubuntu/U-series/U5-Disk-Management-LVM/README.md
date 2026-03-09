@@ -91,3 +91,12 @@ lvcreate -L 2G -s -n snapshot /dev/vgdata/lvdata
 - Storage administration
 - Logical volume management 
 - Dynamic storage expannsion
+
+---
+
+## Environments Used
+
+Ubuntu Linux
+VirtualBox
+Linux CLI tools
+
