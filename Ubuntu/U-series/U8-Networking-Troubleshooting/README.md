@@ -26,20 +26,20 @@ ___
 
 ## Commands Learned
 
-- ip addr
-- ip link
-- hostname -I
-- ping
-- ip route
-- cat /etc/resolv.conf
-- nslook
-- ss -tuln
-- ss -tulnp
-- ss -s
-- traceroute
-- ip -s link
-- nc 
-- netplan
+ip addr
+ip link
+hostname -I
+ping
+ip route
+cat /etc/resolv.conf
+nslook
+ss -tuln
+ss -tulnp
+ss -s
+traceroute
+ip -s link
+nc 
+netplan
 
 ---
 
@@ -69,3 +69,11 @@ ___
 - Analyzing network paths
 - Monitoring active connections
 - Investigating network interface statistics 
+
+---
+
+## Environment Used
+
+Ubuntu Linux
+VirtualBox 
+Linux CLI tools
