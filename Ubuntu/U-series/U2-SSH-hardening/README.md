@@ -65,3 +65,11 @@ Authentication logs
 - Secure remote server access
 - SSH key authentication
 - SSH attack prevention basics
+
+--- 
+
+## Environment Used 
+
+Ubuntu Linux
+VirtualBox
+Linux CLI tools
