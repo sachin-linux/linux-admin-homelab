@@ -350,3 +350,11 @@ Automation ensures tasks run consistently without manual intervention.
 - Create scheduled backup jobs
 - Manage cron jobs with crontab
 - Troubleshoot failed cron jobs
+
+---
+
+#Environments Used
+
+Ubuntu Linux
+VirtualBox
+Linux CLI tools
