@@ -36,7 +36,7 @@ The goal of this project is to build real-world Linux administration skills incl
 
 ---
 
-## Skills Leaerned
+## Skills Learned
 
 - User and group management
 - SSH security and hardening
