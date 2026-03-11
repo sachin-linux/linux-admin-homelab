@@ -46,7 +46,6 @@ The goal of this project is to build real-world Linux administration skills incl
 
 ---
 
-
 All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**.
 
 ---
@@ -68,10 +67,10 @@ U10 - Basic Bash Scripting
 ### T-Series (Troubleshooting Labs)
 T1 - User & Permission Issues
 T2 - SSH Access Problems 
-T3 - Serive Failures
+T3 - Service Failures
 T4 - Log Investigation
 T5 - Disk & LVM Problems
-T6 - NNetwork Troubleshooting
+T6 - Network Troubleshooting
 T7 - Performance & Resoure Issues
 
 ### D-Series (DevOps Tools)
