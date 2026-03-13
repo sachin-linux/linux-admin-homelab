@@ -16,9 +16,6 @@ jobs:
       - name: Say Hello
         run: echo "Pipeline is working!"
 
-      - name: Deliberate failure
-        run: cat nonexistentfile.txt
-
       - name: Check Linux version
         run: uname -a
 
