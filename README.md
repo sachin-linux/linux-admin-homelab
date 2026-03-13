@@ -117,7 +117,7 @@ P10 - Real devOps Project
 | Module | Topic | Status |
 |------|------|------|
 | D1 | Git & GitHub | ✅ Completed |
-| D2 | CI/CD Fundamentals | ⏳ In Progress |
+| D2 | CI/CD Fundamentals | ✅ Completed |
 | D3 | Jenkins | ⏳ In Progress |
 | D4 | Docker | ⏳ In Progress |
 | D5 | Docker Networking | ⏳ In Progress |
