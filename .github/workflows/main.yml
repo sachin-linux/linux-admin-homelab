@@ -3,7 +3,7 @@ name: My First CI Pipeline v2
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   build-add-test:
