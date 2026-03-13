@@ -1,4 +1,4 @@
-name: My First CI Pipeline v2
+name: Pyhton CI Pipeline
 
 on:
   push:
@@ -13,11 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       
-      - name: Say Hello
-        run: echo "Pipeline is working!"
+      - name: Run the app
+        run: python3 app.py
 
-      - name: Check Linux version
-        run: uname -a
+      - name: Check python version
+        run: python3 --version
 
       - name: List files in repo
         run: ls -la
