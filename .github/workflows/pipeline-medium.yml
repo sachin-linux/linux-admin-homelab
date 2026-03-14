@@ -1,0 +1,20 @@
+name: output
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Check disk space
+        run: df -h
+
+      - name: Check memory usage
+        run: free -h
+
+      - name: Check current user
+        run: whoami
