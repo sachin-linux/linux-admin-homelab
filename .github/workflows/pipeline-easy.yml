@@ -1,0 +1,20 @@
+name: output
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Hello from CI
+        run: echo "Hello from CI"
+
+      - name: Check Ubuntu version
+        run: uname -a
+
+      - name: List files in repo
+        run: ls -la
