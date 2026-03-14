@@ -1,0 +1,23 @@
+name: output
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create build folder
+        run: mkdir build
+
+      - name: Copy app.py into build folder
+        run: cp app.py build/
+
+      - name: Run app.py from build folder
+        run: python3 build/app.py
+
+      - name: List files in build folder
+        run: ls build/
