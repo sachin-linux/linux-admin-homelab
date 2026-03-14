@@ -214,9 +214,9 @@ docker volume rm mydata
 
 Never hardcode sensitive info like passwords or API keys in your app. Pass them as environment variables at runtime using `-e`.
 
-``bash
-# Pass single environment variable 
-docker run -it -e MY_NAME=name ubuntu bash
+```bash
+# Pass single environment variable
+docker run -it -e MY_NAME=Sachin ubuntu bash
 echo $MY_NAME
 exit
 
