@@ -134,7 +134,7 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | D3 | Jenkins | 🆕 Upcoming |
 | D4 | Docker | ✅ Completed |
 | D5 | Docker Networking | ✅ Completed |
-| D6 | Docker Compose | 🆕 Upcoming |
+| D6 | Docker Compose | ✅ Completed |
 | D7 | Kubernetes | 🆕 Upcoming |
 | D8 | Terraform | 🆕 Upcoming |
 | D9 | Ansible | 🆕 Upcoming |
