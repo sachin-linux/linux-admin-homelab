@@ -7,9 +7,16 @@ Linux Ubuntu Bash VirtualBox Openssh -> DevOps Tools
 ![VirtualBox](https://img.shields.io/badge/Lab-VirtualBox-blueviolet)
 ![OpenSSH](https://img.shields.io/badge/Security-OpenSSH-lightgrey)
 
-This repository documents my journey learning **Linux System Administration and Devops** through practical labs and hands-on exercises.
 
-The goal of this project is to build real-world Linux administration skills including
+---
+## About Me
+
+Hi. I'm Sachin - a System Administrator with 4+ years of experience, currently transitionig into DevOps and Linux Engineering.
+
+This repository documents my hands-on learning journey through structured labs covering **Linux administration**, **DevOps tools**, **troubleshooting**, and **real-world projects** — one module at a time.
+
+🔗 [LinkedIn](https://www.linkedin.com/in/sachin-linux-admin/)
+📧 sachinshady6@gmail.com
 
 ---
 
@@ -17,11 +24,11 @@ The goal of this project is to build real-world Linux administration skills incl
 
 | Category | Details |
 |--------|--------|
-| Project Type | Linux System Administration & Devops Labs |
+| Project Type | Linux System Administration & DevOps Labs |
 | Focus | Practical Linux & DevOps skills |
 | Environment | VirtualBox with Ubuntu & Kali Linux; Devops tools on Linux |
 | Topics Covered | Users, SSH Hardening, Services, Logs, LVM, Backups, Cron, Networking, Firewall, Bash, Git, Docker, CI/CD, Terraform, Kubernetes, Ansible, Monitoring |
-| Learning Method | Hands-on labs and troubleshooting, real-world projects |
+| Learning Method | Hands-on labs, real-world troubleshooting, structured modules |
 
 ---
 
@@ -39,12 +46,10 @@ The goal of this project is to build real-world Linux administration skills incl
 
 ## Skills Learned
 
-- Linux Administration: Users/groups, SSH hardening, Services, Logs, Disk and storage management, Backups, Cron, Networking, Firewall, Bash scripting
-- Devops Tools: Git, Docker, Jenkins, CI/CD, Kubernetes, Terraform, Ansible, Monitoring
-- Troubleshooting: Logs, Services, Network, Cron, Disk, SSH, Firewall
-- Automation & Infrastructure Management: Scripts, Pipelines, IaC, Deployment
-
----
+- **Linux Administration**: Users/groups, SSH hardening, Services, Logs, Disk and storage management, Backups, Cron, Networking, Firewall, Bash scripting
+- **Devops Tools**: Git, Docker, Jenkins, CI/CD, Kubernetes, Terraform, Ansible, Monitoring
+- **Troubleshooting**: Logs, Services, Network, Cron, Disk, SSH, Firewall
+- **Automation & Infrastructure Management**: Scripts, Pipelines, IaC, Deployment
 
 All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**.
 
@@ -53,49 +58,57 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 ## Repository Structure
 
 ### U-Series (Linux Foundation)
-U1 - Linux Basics
-U2 - SSH Hardening
-U3 - Service Management (systemd)
-U4 - Logs (journalctl deep dive)
-U5 - Disk Management (LVM)
-U6 - Backup concepts
-U7 - Cron Automation 
-U8 - Networking Troubleshooting
-U9 - Firewall (ufw / iptables)
-U10 - Basic Bash Scripting
-
-### T-Series (Troubleshooting Labs)
-T1 - User & Permission Issues
-T2 - SSH Access Problems 
-T3 - Service Failures
-T4 - Log Investigation
-T5 - Disk & LVM Problems
-T6 - Network Troubleshooting
-T7 - Performance & Resoure Issues
+| Module | Topic |
+|--------|-------|
+| U1 | Linux Basics |
+| U2 | SSH Hardening |
+| U3 | Service Management (systemd) |
+| U4 | Logs (journalctl deep dive) |
+| U5 | Disk Management (LVM) |
+| U6 | Backup Concepts |
+| U7 | Cron Automation |
+| U8 | Networking Troubleshooting |
+| U9 | Firewall (ufw / iptables) |
+| U10 | Basic Bash Scripting |
 
 ### D-Series (DevOps Tools)
-D1 - Git & GitHub
-D2 - CI/CD Fundamentals
-D3 - Jenkins
-D4 - Docker
-D5 - Docker Networking
-D6 - Docker Compose
-D7 - Kubernetes
-D8 - Terraform 
-D9 - Ansible
-D10 - Monitoring
+| Module | Topic |
+|--------|-------|
+| D1 | Git & GitHub |
+| D2 | CI/CD Fundamentals |
+| D3 | Jenkins |
+| D4 | Docker |
+| D5 | Docker Networking |
+| D6 | Docker Compose |
+| D7 | Kubernetes |
+| D8 | Terraform |
+| D9 | Ansible |
+| D10 | Monitoring |
+
+### T-Series (Troubleshooting Labs)
+| Module | Topic |
+|--------|-------|
+| T1 | User & Permission Issues |
+| T2 | SSH Access Problems |
+| T3 | Service Failures |
+| T4 | Log Investigation |
+| T5 | Disk & LVM Problems |
+| T6 | Network Troubleshooting |
+| T7 | Performance & Resource Issues |
 
 ### P-Series (DevOps Projects)
-P1 - Git Workflow
-P2 - Networking for DevOps
-P3 - Dockerized Applications
-P4 - CI/CD Pipelines
-P5 - Infrastructure as Code
-P6 - Kubernetes Deployment
-P7 - Cloud Fundamentals
-P8 - Monitoring & Logging 
-P9 - DevSecOps
-P10 - Real devOps Project
+| Module | Topic |
+|--------|-------|
+| P1 | Git Workflow |
+| P2 | Networking for DevOps |
+| P3 | Dockerized Applications |
+| P4 | CI/CD Pipelines |
+| P5 | Infrastructure as Code |
+| P6 | Kubernetes Deployment |
+| P7 | Cloud Fundamentals |
+| P8 | Monitoring & Logging |
+| P9 | DevSecOps |
+| P10 | Real DevOps Project |
 
 ---
 
@@ -118,14 +131,14 @@ P10 - Real devOps Project
 |------|------|------|
 | D1 | Git & GitHub | ✅ Completed |
 | D2 | CI/CD Fundamentals | ✅ Completed |
-| D3 | Jenkins | ⏳ In Progress |
+| D3 | Jenkins | 🆕 Upcoming |
 | D4 | Docker | ✅ Completed |
 | D5 | Docker Networking | ✅ Completed |
-| D6 | Docker Compose | ⏳ In Progress |
-| D7 | Kubernetes | ⏳ In Progress |
-| D8 | Terraform | ⏳ In Progress |
-| D9 | Ansible | ⏳ In Progress |
-| D10 | Monitoring | ⏳ In Progress |
+| D6 | Docker Compose | 🆕 Upcoming |
+| D7 | Kubernetes | 🆕 Upcoming |
+| D8 | Terraform | 🆕 Upcoming |
+| D9 | Ansible | 🆕 Upcoming |
+| D10 | Monitoring | 🆕 Upcoming |
 
 | Module | Topic | Status |
 |------|------|------|
@@ -156,11 +169,12 @@ P10 - Real devOps Project
 ## Real-World Troubleshooting Scenarios
 
 - Troubleshooting SSH connection failures
-- Diagnosing service startup issues
-- Investigating system logs using journalctl
-- Identifying blocked ports using firewall rules
+- Diagnosing service startup issues using systemd and journalctl
+- Investigating system logs to trace root cause of failures
+- Identifying blocked ports using firewall rules 
 - Analyzing network connectivity problems
 - Automating repetitive tasks using Bash scripts
+- Diagnosing DNS resolution failures and fixing via systemd-resolved
 
 ---
 
@@ -226,5 +240,5 @@ To become a **professional Linux System Administrator and DevOps engineer** thro
 
 ## Author
 
-Sachin M
-Linux & DevOps Learning Journey
+**Sachin M** - Linux & DevOps Learning Journey
+🔗 [LinkedIn](https://www.linkedin.com/in/sachin-linux-admin/) | 📧 sachinshady6@gmail.com
