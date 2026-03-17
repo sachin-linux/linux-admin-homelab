@@ -131,7 +131,7 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 |------|------|------|
 | D1 | Git & GitHub | ✅ Completed |
 | D2 | CI/CD Fundamentals | ✅ Completed |
-| D3 | Jenkins | 🆕 Upcoming |
+| D3 | Jenkins | ✅ Completed |
 | D4 | Docker | ✅ Completed |
 | D5 | Docker Networking | ✅ Completed |
 | D6 | Docker Compose | ✅ Completed |
