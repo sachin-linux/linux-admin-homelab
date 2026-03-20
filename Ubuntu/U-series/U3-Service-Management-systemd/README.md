@@ -1,7 +1,11 @@
 # U3 - Service Management (systemd)
 
 ## Objective
+Understand how to manage Linux services using systemd and systemctl
 
+---
+
+## Topics
 - systemctl commands
 - Service lifecycle management 
 - Enabling services at boot
@@ -9,51 +13,74 @@
 - Troubleshooting failed services
 - Creating custom systemd services
 
+---
+
+
 ## Key Commands
 
-systemctl start
-systemctl stop
-systemctl status
-systemctl enable
-systemctl disable
+| Command | Purpose |
+|---------|---------|
+| `systemctl start <service>` | Start a service |
+| `systemctl stop <service>` | Stop a service |
+| `systemctl restart <service>` | Restart a service |
+| `systemctl status <service>` | Check service status |
+| `systemctl enable <service>` | Enable service at boot |
+| `systemctl disable <service>` | Disable service at boot |
 
-Example
-
+### Example
+```bash
 systemctl status nginx
+```
 
-## Viewing Logs
+---
 
+
+## Viewing Service Logs
+```bash
 journalctl -u nginx
+```
+
+---
+
 
 ## Creating Custom Service
 
-Service giles are located in:
-
+###Service giles are located in:
+```
 /etc/systemd/system/
+```
 
-Example service:
+###Example service file - `hello.service`
+```ini
+[Unit]
+Description=Hello Service
 
-hello.service
+[Service]
+ExecStart=/usr/local/bin/hello.sh
 
-Example Script:
+[Install]
+WantedBy=multi-user.targer
+```
 
-/usr/local/bin/hello.sh
-
-Enable service
-
+### Enable and start custom service
+```bash
 sudo systemctl enable hello
-
-Start service
-
 sudo systemctl start hello
+```
+
+---
+
 
 ## Lab
 
 1. Install nginx
-2. Start and stop service
+2. Start and stop the service
 3. Enable service at boot
-4. Create custom service
-5. View service logs
+4. Create a custom systemd service
+5. View service logs with journalctl
+
+---
+
 
 ## Skills Gained
 
@@ -64,6 +91,8 @@ sudo systemctl start hello
 ---
 
 ## Environment Used
-Ubuntu Linux
-VirtualBox
-Linux CLI tools
+| Component | Detail |
+|-----------|--------|
+| Host Machine | Kali Linux |
+| Lab Machine | Ubuntu Linux VM on VirtualBox |
+| Interface | Linux CLI |
