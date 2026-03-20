@@ -1,40 +1,51 @@
 ## D7 - Kubernetes Fundamentals
 
-## What is Kubernetes?
-
-Kubernetes is an open-source container orchestration system. It automates the deployment, scaling, and management of containerized applications across a cluster of machines. Originally developed by Google, now maintained by the Cloud Native Computing Foundation (CNCF)
+## Objective
+Learn how Kubernetes works, how to deploy and manage containerized applications in a cluster, and how to use kubectl to interact with the Kubernetes API.
 
 ---
 
+## Topics Covered
+- Kuberenetes cluster structure
+- Control plane and worker node components
+- Core concepts: Pods, ReplicaSets, Deployments, Services
+- Namespaces, ConfigMaps, Secrets
+- Kubectl commands
+- Deploying, scaling, and exposing applicationns
+
+---
+
+
+## What is Kubernetes?
+Kubernetes is an open-source container orchestration system. It automates the deployment, scaling, and management of containerized applications across a cluster of machines. Originally developed by Google, now maintained by the Cloud Native Computing Foundation (CNCF)
+
+
+---
+
+
 ## Cluster Structure
-
 A kubernetes cluster consists of two types of machines:
-
 - **Control Plane** - manages the cluster
 - **Worker Nodes** - run the application workloads
 
----
-
 ## Control Plane Components 
-
 | Component | Role |
-|---|---|
+|-----------|------|
 | API Server | Central communication hub. All requests go through it. |
 | etcd | Key-value store. Holds entire cluster state. |
 | Scheduler | Assigns newly created Pods to suitable nodes. |
 | Controller Manager | Watches cluster state and reconciles actual vs desired state. |
 
----
-
 ## Worker Node Components 
-
 | Component | Role |
-|---|---|
+|-----------|------|
 | kubelet | Agent on every node. Ensures Pods are running and healthy. |
 | kube-proxy | Manages network rules and traffic routing on the node. |
 | Container Runtime | Runs the actual containers (containerd, CRI-O). |
 
+
 ---
+
 
 ## Core Concepts
 
@@ -62,7 +73,7 @@ Kubernetes operates on a declarative model. You define the desired state in a YA
 
 #### Service Types
 | Type | Accessibility |
-|---|---|
+|-----------|------|
 | ClusterIP | Internal cluster only (default) |
 | NodePort | External access via a static port on the node |
 | LoadBalancer | External load balancer, used in cloud environments |
@@ -71,22 +82,27 @@ Kubernetes operates on a declarative model. You define the desired state in a YA
 Logical partition within a cluster. Used to seperate environments or teams.
 
 ### ConfigMap / Secret
-- ConfigMap - stores non-sensitive configuration data
-- Secret - Stores sensitive data such as passwords and tokens 
+| Resource | Purpose |
+|----------|---------|
+| ConfigMap | Stores non-sensitive configuration data |
+| Secret | Stores sensitive data such as passwords and tokens |
+ 
 
 ---
+
 
 ## Tools 
 
 | Tool | Purpose |
-|---|---|
-| kubectl | CLI to interact with the Kubernetes API |
-| minikube | Runs a single-node Kubernetes cluster locally |
+|------|---------|
+| `kubectl` | CLI to interact with the Kubernetes API |
+| `minikube` | Runs a single-node Kubernetes cluster locally |
+
 
 ---
 
-## Key Commands
 
+## Key Commands
 ```bash
 # Start minikube
 minikube start --driver=docker
@@ -130,10 +146,11 @@ minikube stop
 
 ---
 
+
 ## Labs Completed
 
 ### Lab 1 - Deploying your first Pod
-- Wrote a Pod manifest (pod.yaml)
+- Wrote a Pod manifest (`pod.yaml`)
 - Applied it with `kubectl apply`
 - Inspected with `kubectl get pods` and `kubectl describe`
 - Executed into the Pod with `kubectl exec`
@@ -152,13 +169,27 @@ minikube stop
 - Accessed nginx from outside the Pod via `curl http://192.168.49.2:30080`
 - Cleaned up Deployment and Service 
 
+
 ---
 
-## Environment USed
 
-- Host: Kali Linux 
-- VM: Ubuntu 24.04 on VirtualBox
-- Cluster: minikube v1.38.1
-- Kubernetes: v1.35.3
-- kubectl: v1.35.3
-- Driver: Docker 
+## Skills Gained
+- Understanding Kubernetes cluster architecture
+- Deploying applications using pod and Deployment manifest
+- Self-healing and scaling with Deployments
+- Exposing applications using Serives
+- Using Kubectl to manage cluster resources
+
+
+---
+
+
+## Environment USed
+| Component | Detail |
+|-----------|--------|
+| Host Machine | Kali Linux |
+| Lab Machine | Ubuntu 24.04 VM on VirtualBox |
+| Cluster Tool | minikube v1.38.1 |
+| Kubernetes Version | v1.35.3 |
+| kubectl Version | v1.35.3 |
+| Driver | Docker | 
