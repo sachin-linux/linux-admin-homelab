@@ -3,6 +3,8 @@
 #Objective 
 Understand fundamental Linux commands and system navigation for system administration.
 
+---
+
 ## Topics Covered
 
 - Linux filesystem structure
@@ -12,48 +14,63 @@ Understand fundamental Linux commands and system navigation for system administr
 - File permissions basics
 - Process monitoring basics
 
+---
+
 ## Key Commands
 
-pws
-ls
-cd
-cp 
-mv
-rm
-mkdir
-touch
-cat
-less
-nano
-head
-tail 
+| Command | Purpose |
+|---------|---------|
+| `pwd` | Print working directory |
+| `ls` | List directory contents |
+| `cd` | Change directory |
+| `cp` | Copy files |
+| `mv` | Move or rename files |
+| `rm` | Remove files |
+| `mkdir` | Create directory |
+| `touch` | Create empty file |
+| `cat` | View file contents |
+| `less` | Scroll through file contents |
+| `nano` | Text editor |
+| `head` | View first lines of file |
+| `tail` | View last lines of file |
+
+---
 
 ## Filesystem Navigation
+```bash
+pwd			# Show current directory
+ls -l 			# List with details
+cd /var/log 		# Navigate to log directory
+cd ~ 			# Go to home directory
+```
 
-Examples: 
+---
 
-pwd
-ls -l
-cd /var/log
-cd ~
 
 ## File Operations
 
-Create file 
-
+###Create file 
+```bash
 touch file.txt
+```
 
-copy file
-
+### copy file
+```bash
 cp file.txt backup.txt
+```
 
-Move file
-
+###Move file
+```bash
 mv file.txt /tmp
+```
 
-Delete file
-
+###Delete file
+```bash
 rm file.txt
+```
+
+---
+
 
 ## Lab
 
@@ -62,15 +79,21 @@ rm file.txt
 3. Copy and move files
 4. Remove test files
 
+---
+
 ## Skills Gained
 
 - Basic Linux command usage
 - Filesystem navigation
 - File management operation
 
+---
+
+
 ## Enviroment Used 
 
-Ubuntu Linux
-VirtualBox
-Linux CLI tools
-
+| Component | Detail |
+|-----------|--------|
+| Host Machine | Kali Linux |
+| Lab Machine | Ubuntu Linux VM on VirtualBox |
+| Interface | Linux CLI |	
