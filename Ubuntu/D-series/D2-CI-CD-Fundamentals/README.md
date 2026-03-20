@@ -3,7 +3,9 @@
 ## Objective
 Learn the fundamentals of Continuous Integration and Continuous Deployment using GitHub Actions.
 
-This module demonstrates:
+---
+
+## Topics Covered
 - Understand what CI/CD is and why companies use it
 - Building a real pipeline from scratch
 - Triggering pipelines automatically on code push
@@ -13,10 +15,9 @@ This module demonstrates:
 ---
 
 ## What is CI/CD
-CI/CD stands for Continuous Integration and Continuous Deployment.
-It is a DevOps practice that automates building, testing, and deploying applications.
+CI/CD stands for Continuous Integration and Continuous Deployment. It is a DevOps practice that automates building, testing, and deploying applications.
 
-Without CI/CD:
+**Without CI/CD:**
 - Developers manually build, test, and deploy code
 - Human errors cause production failures
 - Releases are slow and risky
@@ -25,25 +26,22 @@ CI/CD solves this by automating the entire process.
 
 ---
 
-## Continuous Integration (CI)
-Every time a developer pushes code, it is automatically:
-1. Built
-2. Tested
-3. Validated
+##  CI vs CD 
 
+### Continuous Integration (CI)
+Every time a developer pushes code, it is automatically built, tested, and validated.
 Goal: Catch bugs early before they reach production.
 
----
-
-## Continuous Delivery vs Continuous Deployment
-
+### Continuous Delivery vs Continuous Deployment
 | | Continuous Delivery | Continuous Deployment |
 |---|---|---|
 | Code deploys automatically | ❌ | ✅ |
 | Human approval required | ✅ | ❌ |
 | Risk | Lower | Higher |
 
+
 ---
+
 
 ## CI/CD Pipeline Stages
 
@@ -53,16 +51,21 @@ Code Push → Build → Test → Deploy
 
 Each stage runs automatically one after another. If any stage fails, the pipeline stops and notifies the team.
 
+
 ---
 
+
 ## What is GitHub Actions
-GitHub Actions is a CI/CD platform built into GitHub. It allows you to:
+GitHub Actions is a CI/CD platform built into GitHub.
+
 - Define pipelines using YAML files
 - Trigger pipelines on code push, pull requests, or schedules
 - Run pipelines on cloud Ubuntu servers
 - See results directly in your GitHub repository
 
+
 ---
+
 
 ## Pipeline Structure
 
@@ -82,21 +85,23 @@ jobs:
         run: command
 ```
 
-Key components:
-- `name` — Name of the pipeline
-- `on` — What triggers the pipeline
-- `runs-on` — What server to run on
-- `steps` — Commands to execute one by one
+| Component | Purpose |
+|-----------|---------|
+| `name` | Name of the pipeline |
+| `on` | What triggers the pipeline |
+| `runs-on` | What server to run on |
+| `steps` | Commands to execute one by one |
 
 ---
 
 ## Lab
 
 ### Step 1 — Create workflow file
-`.github/workflows/main.yml`
+```
+`.github/workflows/main.yml
+```
 
 ### Step 2 — Write basic pipeline
-
 ```yaml
 name: My First CI Pipeline
 
@@ -122,29 +127,26 @@ jobs:
         run: ls -la
 ```
 
-### Step 3 — Commit and trigger pipeline
+### Step 3 — Trigger pipeline
 Push code to main branch and verify pipeline runs in Actions tab.
 
 ### Step 4 — Deliberately break the pipeline
-
 ```yaml
 - name: Deliberate failure
   run: cat nonexistentfile.txt
 ```
-
 Observe pipeline stops at the failed step with red X.
 
 ### Step 5 — Fix and restore pipeline
 Remove the failing step and push again. Verify pipeline returns to green.
 
 ### Step 6 — Build Python CI pipeline independently
-
-`app.py`:
+**app.py:**
 ```python
 print("App is running successfully!")
 ```
 
-Pipeline:
+**Pipeline:**
 ```yaml
 name: Python CI Pipeline
 
@@ -170,26 +172,19 @@ jobs:
         run: ls -la
 ```
 
-Output:
-```
-App is running successfully!
-Python 3.12.3
-```
-
 ---
 
-## Homework Pipelines
 
+## Homework Pipelines
 | Pipeline | Level | What it does |
 |----------|-------|--------------|
-| pipeline-easy.yml | Easy | Hello from CI, Ubuntu version, list repo files |
-| pipeline-medium.yml | Medium | Disk space, memory usage, current user |
-| pipeline-hard.yml | Hard | Create build folder, copy app.py, run it, list files |
+| `pipeline-easy.yml` | Easy | Hello from CI, Ubuntu version, list repo files |
+| `pipeline-medium.yml` | Medium | Disk space, memory usage, current user |
+| `pipeline-hard.yml` | Hard | Create build folder, copy app.py, run it, list files |
 
 ---
 
 ## Key Commands
-
 | Command | What it does |
 |---------|--------------|
 | `df -h` | Check disk space |
@@ -218,8 +213,9 @@ CI/CD is not just theory. It is a real automated system that protects production
 ---
 
 ## Environment Used
-- Kali Linux host
-- GitHub Actions cloud runner
-- Ubuntu Latest (GitHub hosted)
-- Python 3.12.3
-- GitHub CLI / Web UI
+| Component | Detail |
+|-----------|--------|
+| Host Machine | Kali Linux |
+| CI Runner | GitHub Actions (Ubuntu Latest) |
+| Python Version | 3.12.3 |
+| Interface | GitHub CLI / Web UI |
