@@ -3,6 +3,9 @@
 ## Objective
 Secure remote server access using SSH hardening technique
 
+---
+
+
 ## Topics Covered
 
 - OpenSSH server configuration
@@ -12,45 +15,61 @@ Secure remote server access using SSH hardening technique
 - Disabling root login
 - Monitoring SSH logs
 
+---
+
+
 ## Key Commands
 
-systemctl status ssh
-systemctl restart ssh
-ssh-keygen
-ssh-copy-id
-journalctl -u ssh
+| Command | Purpose |
+|---------|---------|
+| `systemctl status ssh` | Check SSH service status |
+| `systemctl restart ssh` | Restart SSH service |
+| `ssh-keygen` | Generate SSH key pair |
+| `ssh-copy-id` | Copy public key to server |
+| `journalctl -u ssh` | View SSH logs |
+
+---
+
 
 ## SSH key Authentication
 
-Generate key pair
-
+###Generate key pair
+```bash
 ssh-keygen -t ed25519
+```
 
-Copy key to server
+###Copy key to server
 
 ssh-copy-id user@server-ip
 
 ## SSH Configuration File
-
+```bash
 /etc/ssh/sshd_config
+```
 
-Important settings: 
-
+###Important settings: 
+```bash
 PermitRootLogin no
 PasswordAuthentication no
 Port 2222
+```
 
-Restart SSH after changes
-
+###Restart SSH after changes
+```bash
 sudo systemctl restart SSH
+```
+
+---
+
 
 ## Log Monitoring
+```bash
+journalctl -u ssh		# view SSH logs
+/var/log/auth.log		# View authentication logs
+```
 
-journalctl -u ssh
+---
 
-Authentication logs
-
-/var/log/auth.log
 
 ## Lab
 
@@ -59,6 +78,9 @@ Authentication logs
 3. Configure key authentication
 4. Disable password login
 5. Test login from another machine
+
+---
+
 
 ## Skills Gained
 
@@ -69,7 +91,8 @@ Authentication logs
 --- 
 
 ## Environment Used 
-
-Ubuntu Linux
-VirtualBox
-Linux CLI tools
+| Component | Detail |
+|-----------|--------|
+| Host Machine | Kali Linux |
+| Lab Machine | Ubuntu Linux VM on VirtualBox |
+| Interface | Linux CLI |
