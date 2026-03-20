@@ -3,6 +3,9 @@
 ## Objective
 Understand Linux logging and diagnose system issue using logs.
 
+---
+
+
 ## Topics Covered
 
 - systemd journal
@@ -12,43 +15,64 @@ Understand Linux logging and diagnose system issue using logs.
 - log monitoring
 - logrotate configuration
 
-## Key Commands
+---
 
-journalctl 
-journalctl -f
-journalctl -u ssh
-journalctl -b
-journalctl --since "1 hour ago"
+
+## Key Commands
+| Command | Purpose |
+|---------|---------|
+| `journalctl` | View all journal logs |
+| `journalctl -f` | Follow logs in real time |
+| `journalctl -u ssh` | View logs for specific service |
+| `journalctl -b` | View logs from current boot |
+| `journalctl --since "1 hour ago"` | View logs from last hour |
+
+---
+
 
 ## Log Locations
+| File | Purpose |
+|------|---------|
+| `/var/log/syslog` | General system logs |
+| `/var/log/auth.log` | Authentication events |
+| `/var/log/kern.log` | Kernel logs |
 
-/var/log/syslog
-/var/log/auth.log
-/var/log/kern.log
+---
+
 
 ## Monitoring Logs
 
-Follow logs in real time
-
+### Follow logs in real time
+```bash
 journalctl -f
+```
 
-Check SSH logs
-
+### Check SSH logs
+```bash
 journalctl -u ssh
+```
 
-Check boot logs
-
+### Check boot logs
+```bash
 journalctl -b
+```
+
+---
+
 
 ## Log Rotation 
 
-Configuration file
-
+### Main configuration file
+```
 /etc/logrotate.conf
+```
 
-Application configuration
-
+### Application-specific configuration
+```
 /etc/logrotate.d/
+```
+
+---
 
 ## Lab
 
@@ -58,15 +82,20 @@ Application configuration
 4. Trigger service restart and observe logs
 5. Force log rotation
 
+---
+
+
 ## Skills Gained
 
 - Log analysis 
-- Troubleshooting services
+- Troubleshooting services via logs
 - Monitoring authentication events
 
 ---
 
 ## Environment Used
-Ubuntu Linux
-VirtualBox
-Linux CLI tools
+| Component | Detail |
+|-----------|--------|
+| Host Machine | Kali Linux |
+| Lab Machine | Ubuntu Linux VM on VirtualBox |
+| Interface | Linux CLI |
