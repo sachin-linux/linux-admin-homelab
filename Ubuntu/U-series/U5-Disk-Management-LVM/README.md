@@ -1,11 +1,14 @@
 # U5 - Disk Management (LVM)
 
 ## Objective 
-Manage Linux storage using partitions, filesystem, and Logical Volume Manager (LVM)
+Manage Linux storage using partitions, filesystem, and Logical Volume Manager (LVM).
+
+---
+
 
 ## Topics Covered
 
-- Disk identification'
+- Disk identification
 - Disk partitioning
 - Filesystem creation
 - Mounting filesystems
@@ -14,67 +17,88 @@ Manage Linux storage using partitions, filesystem, and Logical Volume Manager (L
 - Logical volume expansion
 - LVM snapshots
 
-## Key Commands
+---
 
-lsblk
-fdisk 
-mkfs.ext4
-mount
-unmount
-df -h
-pvs
-vgs
-lvs
+
+## Key Commands
+| Command | Purpose |
+|---------|---------|
+| `lsblk` | List block devices |
+| `fdisk` | Partition management |
+| `mkfs.ext4` | Create ext4 filesystem |
+| `mount` | Mount filesystem |
+| `umount` | Unmount filesystem |
+| `df -h` | Show disk usage |
+| `pvs` | List physical volumes |
+| `vgs` | List volume groups |
+| `lvs` | List logical volumes |
+
+---
 
 ## Disk Identification
+```bash
+lsblk			# List all disks and partitions
+sudo fdisk -l		# Show detailed disk information	
+```
 
-lsblk
+---
 
-Show disk information
-
-sudo fdisk -l
 
 ## Filesystem Creation
-
+```bash
 Sudo mkfs.ext4 /dev/sdb1
+```
+
+---
+
 
 ## Mount Filesystem
-
+```bash
 sudo mount /dev/sdb1 /mnt
+```
+
+---
+
 
 ## Persistent Mounts
-
-/etc/fstab
-
-Example entry
-
+Edit `/etc/fstab` to mount automatically at boot:
+```
 /dev/sdb1 /data ext4 defaults 0 2
+```
+
+---
+
 
 ## LVM Architecture
 
-Physical Volume (PV)
-
+###Physical Volume (PV)
+```bash
 pvcreate /dev/sdb1
+```
 
-Volume Group (VG)
-
+###Volume Group (VG)
+```bash
 vgcreate vgdata /dev/sdb1
+```
 
-Logical Volume (LV)
-
+###Logical Volume (LV)
+```bash
 lvcreate -L 5G -n lvdata vgdata
+```
 
 ## Expand Logical Volume 
-
+```bash
 lvextend -L +2G /dev/vgdata/lvdata
-
-resize filesystems
-
 resize2fs /dev/vgdata/lvdata
+```
 
 ## LVM Snapshot
-
+```bash
 lvcreate -L 2G -s -n snapshot /dev/vgdata/lvdata
+```
+
+---
+
 
 ## Lab 
 
@@ -95,8 +119,8 @@ lvcreate -L 2G -s -n snapshot /dev/vgdata/lvdata
 ---
 
 ## Environments Used
-
-Ubuntu Linux
-VirtualBox
-Linux CLI tools
-
+| Component | Detail |
+|-----------|--------|
+| Host Machine | Kali Linux |
+| Lab Machine | Ubuntu Linux VM on VirtualBox |
+| Interface | Linux CLI |
