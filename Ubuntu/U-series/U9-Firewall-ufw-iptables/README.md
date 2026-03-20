@@ -1,14 +1,13 @@
 # U9 - FIrewall (UFW / IPTABLES)
 
 ## Objective
-
-This module focuses on configuring and managing firewalls in Linux systems.
-
+Configure and manage firewalls in Linux systems.
 Firewalls protect systems by controlling incoming and outgoing network traffic based on defined rules.
-
 Linux Administrators use firewalls to secure services, block unauthorized access, and allow only necessary ports.
 
+
 ---
+
 
 ## Topics Covered
 
@@ -18,160 +17,127 @@ Linux Administrators use firewalls to secure services, block unauthorized access
 - Default firewall politics
 - Firewall rule management
 - UFW (Uncomplicated Firewall) usage
-- Basic IPTables inspection
+- Basic iptables inspection
 - Opening and closing ports
 - Restricting access by IP address 
 
+
 --- 
 
-## Commands Learned
 
-ufw status
-ufw enable
-ufw disable
-ufw allow
-ufw deny
-ufw delete
-ufw reset
-ufw status numbered
-ufw allow from <ip>
-ufw allow <port>
-ufw allow <port-range>
-iptables -L
-ss - tuln
+## Key Commands
+| Command | Purpose |
+|---------|---------|
+| `ufw status` | Check firewall status |
+| `ufw enable` | Enable firewall |
+| `ufw disable` | Disable firewall |
+| `ufw allow <port>` | Allow port |
+| `ufw deny <port>` | Deny port |
+| `ufw delete <rule>` | Delete a rule |
+| `ufw reset` | Reset all rules |
+| `ufw status numbered` | List rules with numbers |
+| `ufw allow from <ip>` | Allow traffic from specific IP |
+| `iptables -L` | List iptables rules |
+| `ss -tuln` | Check listening ports |
+
 
 ---
+
 
 ## Labs Performed
 
-Lab 1 - Check firewall status
-
-Command:
+### Lab 1 - Check firewall status
+```bash
 sudo ufw status
+```
 
----
-
-Lab 2 - Enable firewall
-
-Command: 
+### Lab 2 - Enable firewall
+```bash 
 sudo ufw enable 
-
-Verify: 
 sudo ufw status 
+```
 
----
-
-Lab 3 - Allow SSH access
-
-Command:
+### Lab 3 - Allow SSH access
+```bash
 sudo ufw allow 22
-
-Verify:
 sudo ufw status
+```
 
----
-
-Lab 4 - Block HTTP traffic
-
-Command:
+### Lab 4 - Block HTTP traffic
+```bash
 sudo ufw deny 80 
-
-Verify:
 sudo ufw status numbered
+```
 
----
-
-Lab 5 - Remove firewall rule
-
-Check rules:
+### Lab 5 - Remove firewall rule
+```bash
 sudo ufw status numbered
-
-Delete rule:
 sudo ufw delete <rule_number>
+```
 
----
-
-Lab 6 - Allow HTTPS traffic
-
-Command:
+### Lab 6 - Allow HTTPS traffic
+```bash
 sudo ufw allow 443
-
-Verify:
 sudo ufw status
+```
 
----
-
-Lab 7 - Allow SSH only from specific IP
-
-Command:
+### Lab 7 - Allow SSH only from specific IP
+```bash
 sudo ufw allow from 192.168.1.50 to any port 22
+```
 
---- 
-
-Lab 8 - Reset firewall configuration
-
-Command:
+### Lab 8 - Reset firewall configuration
+```bash
 sudo ufw reset
+```
+
 
 ---
 
 ## Troubleshooting Scenarios 
 
 ### SSH Connection Fails 
+```bash
+systemctl status ssh		# Check SSH service
+ss -tuln 			# Check listening ports
+sudo ufw status 		# Check firewall rules
+sudo ufw allow 22 		# Fix: open SSH Port
+```
 
-Check SSH service:
-systemctl status ssh
-
-Check listening ports:
-ss -tuln
-
-Check firewall rules:
-sudo ufw status
-
-Fix:
-sudo ufw allow 22
-
----
 
 ### Website Not Accessible
+```bash
+systemctl status apache2 	# Check Web service
+ss -tuln			# Check listening ports
+sudo ufw status			# Check firewall 
+sudo ufw allow 80		# Fix: open HTTP port
 
-Check web service:
-systemctl status apache2
-
-Check listening ports:
-ss -tuln
-
-Check firewall:
-sudo ufw status
-
-Fix:
-sudo ufw allow 80
-
----
 
 ### Port Blocked by Firewall
+```bash
+sudo ufw status numbered 		# Check rules
+sudo ufw delete <rule_number>		# Delete blocking rule
 
-Check rules:
-sudo ufw status numbered
-
-Delete blocking rule: 
-sudo ufw delete <rule_number>
 
 ---
+
 
 ### Skills Gained 
 
 - Configuring Linux firewall
 - Opening and closing ports
-- Restricting service access
+- Restricting service access by IP
 - Inspecting firewall rules
 - Troubleshooting blocked services
-- Basic IPTables inspection
+- Basic iptables inspection
+
 
 ---
 
-## Environment Used
 
-Ubuntu Linux
-VirtualBox
-Linux CLI tools
+## Environment Used
+| Component | Detail |
+|-----------|--------|
+| Host Machine | Kali Linux |
+| Lab Machine | Ubuntu Linux VM on VirtualBox |
+| Interface | Linux CLI |
