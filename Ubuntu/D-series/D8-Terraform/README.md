@@ -30,7 +30,6 @@ terraform destroy   # Tear everything down
 | `terraform.tfstate` | Terraform's memory of what it built |
 | `.terraform.lock.hcl` | Locks provider versions for consistency |
 
----
 
 ## HCL Syntax (HashiCorp Configuration Language)
 
@@ -48,8 +47,8 @@ resource "aws_instance" "my_server" {
   instance_type = "t3.micro"
 }
 ```
-Format: `resource "resource_type" "local_label" { }`
-The second name (`my_server`) is a local reference label — not the name on AWS.
+Format: `resource "resource_type" "local_label" { }` The second name (`my_server`) is a local reference label — not the name on AWS.
+
 
 ### Variable
 ```hcl
@@ -59,13 +58,14 @@ variable "instance_type" {
 ```
 Used as `var.instance_type` inside resources.
 
+
 ### Output
 ```hcl
 output "server_ip" {
   value = aws_instance.my_server.public_ip
 }
 ```
-Prints useful info (like public IP) after `terraform apply`.
+Prints useful info (like public IP) after terraform apply.
 
 ---
 
@@ -232,7 +232,24 @@ ssh -i ~/.ssh/lab3 ubuntu@<server_ip>
 - SSHed into a live Ubuntu server running in AWS Mumbai
 - `terraform destroy` terminated all 3 resources cleanly
 
+
 ---
+
+
+## Skills Gained 
+- Understanding Infrastructure as Code (IaC) and why it replaces manual cloud console work
+- Writing HCL (HashiCorp Configuration Language) for providers, resources, variables, and outputs
+- Running the full Terraform workflow - inti, plan, apply, destroy
+- Understanding terraform.tfstate and drift detection
+- Setting up AWS IAM user with least privilege for Terraform
+- Provisioning real EC2 instances on AWS using Terraform
+- Creating and attaching security groups and key pairs via code
+- SSHing into a Terraform-provisioned EC2 instance 
+- Understanding dependency ordering in Terraform resource creation
+
+
+---
+
 
 ## Important Rules
 - Always run `terraform plan` before `terraform apply`
@@ -241,7 +258,9 @@ ssh -i ~/.ssh/lab3 ubuntu@<server_ip>
 - Never use root AWS account for Terraform — always IAM user with least privilege
 - Log out of AWS console after every session
 
+
 ---
+
 
 ## Environment Used
 | Component | Detail |
