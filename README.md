@@ -142,6 +142,16 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 
 | Module | Topic | Status |
 |------|------|------|
+| T1 | User & Permission Issues | 🆕 Upcoming |
+| T2 | SSH Access Problems | 🆕 Upcoming |
+| T3 | Service Failures | 🆕 Upcoming |
+| T4 | Log Investigation | 🆕 Upcoming |
+| T5 | Disk & LVM Problems | 🆕 Upcoming |
+| T6 | Network Troubleshooting | 🆕 Upcoming |
+| T7 | Performance & Resource Issues | 🆕 Upcoming |
+
+| Module | Topic | Status |
+|------|------|------|
 | P1 | Git Workflow | 🆕 Upcoming |
 | P2 | Networking for DevOps | 🆕 Upcoming |
 | P3 | Dockerized Applications | 🆕 Upcoming |
@@ -152,17 +162,6 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | P8 | Monitoring & Logging | 🆕 Upcoming |
 | P9 | DevSecOps | 🆕 Upcoming |
 | P10 | Real DevOps Project | 🆕 Upcoming |
-
-| Module | Topic | Status |
-|------|------|------|
-| T1 | User & Permission Issues | 🆕 Upcoming |
-| T2 | SSH Access Problems | 🆕 Upcoming |
-| T3 | Service Failures | 🆕 Upcoming |
-| T4 | Log Investigation | 🆕 Upcoming |
-| T5 | Disk & LVM Problems | 🆕 Upcoming |
-| T6 | Network Troubleshooting | 🆕 Upcoming |
-| T7 | Performance & Resource Issues | 🆕 Upcoming |
-
 
 ---
 
