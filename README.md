@@ -142,8 +142,8 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 
 | Module | Topic | Status |
 |------|------|------|
-| T1 | User & Permission Issues | 🆕 Upcoming |
-| T2 | SSH Access Problems | 🆕 Upcoming |
+| T1 | User & Permission Issues | ✅ Completed |
+| T2 | SSH Access Problems | ✅ Completed |
 | T3 | Service Failures | 🆕 Upcoming |
 | T4 | Log Investigation | 🆕 Upcoming |
 | T5 | Disk & LVM Problems | 🆕 Upcoming |
