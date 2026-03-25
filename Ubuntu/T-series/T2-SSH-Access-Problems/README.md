@@ -117,5 +117,6 @@ Real-world SSH troubleshooting scenarios - diagnosin and fixing broken SSH acces
 |---|---|
 | Host Machine | Kali Linux |
 | Lab Node | Ubuntu 24.04 VM on VirtualBox (CLI only) |
-| SSH Port | 2222 |
-
+| SSH Port | 2222 (non-default) |
+| Key Files | /etc/ssh/sshd_config, ~/.ssh/authorized_keys, ~/.ssh/id_ed25519 |
+| Key Tools | systemctl, sshd, ufw, ssh-copy-id, grep, nano, passws |
