@@ -147,7 +147,7 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | T3 | Service Failures | ✅ Completed |
 | T4 | Log Investigation | ✅ Completed |
 | T5 | Disk & LVM Problems | 🆕 Upcoming |
-| T6 | Network Troubleshooting | 🆕 Upcoming |
+| T6 | Network Troubleshooting | ✅ Completed |
 | T7 | Performance & Resource Issues | 🆕 Upcoming |
 
 | Module | Topic | Status |
