@@ -2,4 +2,3 @@ Main branch edit - teammate change
 P1 - Git Workflow notes
 hotfix on main
 teammate update on main
-bad pushed change
