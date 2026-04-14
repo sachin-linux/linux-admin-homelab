@@ -1,7 +1,5 @@
 # P1 - Git Workflow
 
-# P1 - Git Workflow
-
 ## What is Git Workflow?
 Git workflow is the practice of using Git branching, merging, rebasing, and tagging strategies to manage code changes in a team environment. It defines how developers collaborate on a shared codebase without breaking each other's work.
 
