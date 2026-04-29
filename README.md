@@ -148,12 +148,12 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | T4 | Log Investigation | ✅ Completed |
 | T5 | Disk & LVM Problems | ✅ Completed |
 | T6 | Network Troubleshooting | ✅ Completed |
-| T7 | Performance & Resource Issues | 🆕 Upcoming |
+| T7 | Performance & Resource Issues | ✅ Completed |
 
 | Module | Topic | Status |
 |------|------|------|
-| P1 | Git Workflow | 🆕 Upcoming |
-| P2 | Networking for DevOps | 🆕 Upcoming |
+| P1 | Git Workflow | ✅ Completed |
+| P2 | Networking for DevOps | ✅ Completed |
 | P3 | Dockerized Applications | 🆕 Upcoming |
 | P4 | CI/CD Pipelines  | 🆕 Upcoming |
 | P5 | Infrastructure as Code | 🆕 Upcoming |
