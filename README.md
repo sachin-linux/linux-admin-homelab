@@ -1,27 +1,18 @@
 # Linux Administrator -> DevOps Learning Repository
 Linux Ubuntu Bash VirtualBox Openssh -> DevOps Tools
-
 ![Linux](https://img.shields.io/badge/Linux-Administration-blue)
 ![Ubuntu](https://img.shields.io/badge/OS-Ubuntu-orange)
 ![Bash](https://img.shields.io/badge/Scripting-Bash-green)
 ![VirtualBox](https://img.shields.io/badge/Lab-VirtualBox-blueviolet)
 ![OpenSSH](https://img.shields.io/badge/Security-OpenSSH-lightgrey)
-
-
 ---
 ## About Me
-
 Hi. I'm Sachin - a System Administrator with 4+ years of experience, currently transitionig into DevOps and Linux Engineering.
-
 This repository documents my hands-on learning journey through structured labs covering **Linux administration**, **DevOps tools**, **troubleshooting**, and **real-world projects** — one module at a time.
-
 🔗 [LinkedIn](https://www.linkedin.com/in/sachin-linux-admin/)
 📧 sachinshady6@gmail.com
-
 ---
-
 ## Project Overview
-
 | Category | Details |
 |--------|--------|
 | Project Type | Linux System Administration & DevOps Labs |
@@ -29,11 +20,8 @@ This repository documents my hands-on learning journey through structured labs c
 | Environment | VirtualBox with Ubuntu & Kali Linux; Devops tools on Linux |
 | Topics Covered | Users, SSH Hardening, Services, Logs, LVM, Backups, Cron, Networking, Firewall, Bash, Git, Docker, CI/CD, Terraform, Kubernetes, Ansible, Monitoring |
 | Learning Method | Hands-on labs, real-world troubleshooting, structured modules |
-
 ---
-
 ## Table of Contents
-
 - [Skills Learned](#skills-learned)
 - [Repository Structure](#repository-structure)
 - [Learning Progress](#learning-progress)
@@ -41,22 +29,16 @@ This repository documents my hands-on learning journey through structured labs c
 - [Labs](#labs)
 - [Environment Used](#environment-used)
 - [Goal](#goal)
-
 ---
-
 ## Skills Learned
 
 - **Linux Administration**: Users/groups, SSH hardening, Services, Logs, Disk and storage management, Backups, Cron, Networking, Firewall, Bash scripting
 - **Devops Tools**: Git, Docker, Jenkins, CI/CD, Kubernetes, Terraform, Ansible, Monitoring
 - **Troubleshooting**: Logs, Services, Network, Cron, Disk, SSH, Firewall
 - **Automation & Infrastructure Management**: Scripts, Pipelines, IaC, Deployment
-
 All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**.
-
 ---
-
 ## Repository Structure
-
 ### U-Series (Linux Foundation)
 | Module | Topic |
 |--------|-------|
@@ -70,7 +52,6 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | U8 | Networking Troubleshooting |
 | U9 | Firewall (ufw / iptables) |
 | U10 | Basic Bash Scripting |
-
 ### D-Series (DevOps Tools)
 | Module | Topic |
 |--------|-------|
@@ -84,7 +65,6 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | D8 | Terraform |
 | D9 | Ansible |
 | D10 | Monitoring |
-
 ### T-Series (Troubleshooting Labs)
 | Module | Topic |
 |--------|-------|
@@ -95,7 +75,6 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | T5 | Disk & LVM Problems |
 | T6 | Network Troubleshooting |
 | T7 | Performance & Resource Issues |
-
 ### P-Series (DevOps Projects)
 | Module | Topic |
 |--------|-------|
@@ -109,11 +88,18 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | P8 | Monitoring & Logging |
 | P9 | DevSecOps |
 | P10 | Real DevOps Project |
-
+### O-Series (OS/Distro Building)
+| Module | Topic |
+|--------|-------|
+| O1 | Boot Process |
+| O2 | Package Building (.deb) |
+| O3 | Live-build / ISO |
+| O4 | Kernel Basics |
+| O5 | Custom Repo |
+| O6 | Branding & Release |
+| O7 | DistroWatch Submission |
 ---
-
 ## Learning Progress
-
 | Module | Topic | Status |
 |------|------|------|
 | U1 | Linux Basic | ✅ Completed |
@@ -126,7 +112,6 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | U8 | Networking Troubleshooting | ✅ Completed |
 | U9 | Firewall (ufw / iptables) | ✅ Completed |
 | U10 | Basic Bash Scripting | ✅ Completed |
-
 | Module | Topic | Status |
 |------|------|------|
 | D1 | Git & GitHub | ✅ Completed |
@@ -139,7 +124,6 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | D8 | Terraform | ✅ Completed |
 | D9 | Ansible | ✅ Completed |
 | D10 | Monitoring | ✅ Completed |
-
 | Module | Topic | Status |
 |------|------|------|
 | T1 | User & Permission Issues | ✅ Completed |
@@ -149,7 +133,6 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | T5 | Disk & LVM Problems | ✅ Completed |
 | T6 | Network Troubleshooting | ✅ Completed |
 | T7 | Performance & Resource Issues | ✅ Completed |
-
 | Module | Topic | Status |
 |------|------|------|
 | P1 | Git Workflow | ✅ Completed |
@@ -162,46 +145,41 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | P8 | Monitoring & Logging | 🆕 Upcoming |
 | P9 | DevSecOps | 🆕 Upcoming |
 | P10 | Real DevOps Project | 🆕 Upcoming |
-
+| Module | Topic | Status |
+|------|------|------|
+| O1 | Boot Process | 🆕 Upcoming |
+| O2 | Package Building (.deb) | 🆕 Upcoming |
+| O3 | Live-build / ISO | 🆕 Upcoming |
+| O4 | Kernel Basics | 🆕 Upcoming |
+| O5 | Custom Repo | 🆕 Upcoming |
+| O6 | Branding & Release | 🆕 Upcoming |
+| O7 | DistroWatch Submission | 🆕 Upcoming |
 ---
-
 ## Real-World Troubleshooting Scenarios
-
 - Troubleshooting SSH connection failures
 - Diagnosing service startup issues using systemd and journalctl
 - Investigating system logs to trace root cause of failures
-- Identifying blocked ports using firewall rules 
+- Identifying blocked ports using firewall rules
 - Analyzing network connectivity problems
 - Automating repetitive tasks using Bash scripts
 - Diagnosing DNS resolution failures and fixing via systemd-resolved
-
 ---
-
 ## Labs
-
 Each Module in this repository includes:
-
 - Practical lab exercises
 - Real Linux administration commands
 - Troubleshooting scenarios
 - Notes and explanations
-
---- 
-
+---
 ## Environment Used
-
 - VirtualBox
 - Ubuntu Linux
 - Kali Linux
 - OpenSSH
 - Linux CLI tools
-
 ---
-
 ## Lab Environment
-
 All labs were performed inside a controlled virtual lab environment.
-
 ```text
 Host Machine
 │
@@ -211,17 +189,13 @@ Host Machine
 │
 └── Kali Linux VM (Security / SSH / Networking Tests)
 ```
-
 The lab setup allows safe testing of:
-
 - SSH hardening
 - firewall rules
 - service failures
 - networking troubleshooting
 - automation scripts
-
 **DevOps Environment**
-
 - Docker
 - Jenkins
 - Kubernetes
@@ -230,14 +204,9 @@ The lab setup allows safe testing of:
 - CI/CD Pipelines
 
 ---
-
 ## Goal
-
 To become a **professional Linux System Administrator and DevOps engineer** through structured learning, hands-on labs  and real-world labs.
-
 ---
-
 ## Author
-
 **Sachin M** - Linux & DevOps Learning Journey
 🔗 [LinkedIn](https://www.linkedin.com/in/sachin-linux-admin/) | 📧 sachinshady6@gmail.com
