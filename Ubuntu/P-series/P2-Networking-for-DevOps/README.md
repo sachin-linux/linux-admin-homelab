@@ -1,6 +1,6 @@
 # P2 - Networking for DevOps
 
-## What is Netwiorking for DevOps?
+## What is Networking for DevOps?
 Networking for DevOps is the practical understanding of how data travels between machines, how services expose themselves on ports, how firewalls control access, and how DNS resolves names to IPs. It is the foundation of diagnosing connnectivity issues in any real infrastructure environment.
 
 
