@@ -2,7 +2,7 @@
 
 
 ## What is Ansible?
-Anisible is an open-source automation tool used to configure, manage, and deploy software on multiple servers simultaneously. It is agentless - it uses SSH to connect to target servers, so nothing needs to be installed on the servers being managed, Playbooks are written in YAML, the same format used in GitHub Actions (D2)
+Ansible is an open-source automation tool used to configure, manage, and deploy software on multiple servers simultaneously. It is agentless - it uses SSH to connect to target servers, so nothing needs to be installed on the servers being managed, Playbooks are written in YAML, the same format used in GitHub Actions (D2)
 
 
 ## Why Ansible?
