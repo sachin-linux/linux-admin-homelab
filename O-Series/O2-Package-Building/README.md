@@ -1,4 +1,4 @@
-IS # O2 - Package Building (.deb)
+# O2 - Package Building (.deb)
 
 ## What is package Building (.deb)
 
