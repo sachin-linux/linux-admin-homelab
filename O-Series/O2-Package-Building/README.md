@@ -1,4 +1,4 @@
-# O2 - Package Building (.deb)
+IS # O2 - Package Building (.deb)
 
 ## What is package Building (.deb)
 
@@ -49,23 +49,29 @@ sudo dpkg -r cipher-welcome
 ## Scenarios Practised
 
 **Problem:** `dpkg-deb --build` failed with `package architecture is missing or empty`.
-**investigate:** Checked the `control` file - a required field (`Architecture`) was missing or malformed from the initial write.
-**Fix:** Rewrote `control` file with all required fields present and correctly spelled, including `Architecture: amd64`
-**Key Lesson:** `dpkg-deb` is strict - every required control field must exist and be exactly spelled, or the build fails outright with no partial output.
+**Investigate:** Checked the `control` file — a required field (`Architecture`) was missing or malformed from the initial write.
+**Fix:** Rewrote the `control` file with all required fields present and correctly spelled, including `Architecture: amd64`.
+**Key Lesson:** `dpkg-deb` is strict — every required control field must exist and be exactly spelled, or the build fails outright with no partial output.
 
 **Problem:** Build succeeded but with a warning: `root directory cipher-welcome-1.0.0 has unusual owner or group 1000:1000`.
 **Investigate:** The build folder was created via `mkdir` as the regular user (UID 1000), but packages conventionally represent root-owned system files since `dpkg` installs them system-wide as root.
 **Fix:** Ran `sudo chown -R root:root cipher-welcome-1.0.0` and rebuilt using `dpkg-deb --build --root-owner-group`.
-**Key Lesson:** Ownership matters even for a test package - real `.deb` builds should always enforce root ownership regardless of who's building it.
+**Key Lesson:** Ownership matters even for a test package — real `.deb` buildsdirectory '/usr/local' not empty so not removed`. should always enforce root ownership regardless of who's building it.
 
-**Problem:** After installing, running the script threw, `unexpected EOF while looking for matching quote`.
-**Investigate:** Ran `cat -A` on the installed script to reveal hidden characters and located the exact broken line: `echo "Kernel" $(uname -r)"` - a closing quote landed right after `"Kernel"`, leaving `$(uname -r)` unquoted and a stray trailing quote with nothing to close it.
+**Key Lesson:** The `Maintainer` field is just a contact reference with no domain verification requirement; it can be updated with a one-line change and rebuild once CIPHER Linux has its own domain.
+**Problem:** After installing, running the script threw `unexpected EOF while looking for matching quote`.
+**Investigate:** Ran `cat -A` on the installed script to reveal hidden characters and located the exact broken line: `echo "Kernel" $(uname -r)"` — a closing quote landed right after `"Kernel"`, leaving `$(uname -r)` unquoted and a stray trailing quote with nothing to close it.
 **Fix:** Corrected the line to `echo "Kernel: $(uname -r)"`, rebuilt, and reinstalled.
-**Key Lesson:** Bash quote mismatches the interpreter to read to end-of-file waiting for a closing quote - `cat -A` is the fastest way to catch hidden/mismatched characters that plain `cat` won't show clearly.
+**Key Lesson:** Bash quote mismatches cause the interpreter to read to end-of-file waiting for a closing quote — `cat -A` is the fastest way to catch hidden/mismatched characters that plain `cat` won't show clearly.
 
 **Problem:** After `sudo dpkg -r cipher-welcome`, a warning appeared: `directory '/usr/local' not empty so not removed`.
+**Investigate:** Confirmed this wasn't a bug — `/usr/local` pre-existed on the system before the package was installed and contains unrelated files from other tools.
+**Fix:** No fix needed — this is dpkg correctly refusing to delete a shared system directory it doesn't own.
+**Key Lesson:** `dpkg` only removes directories it created that are now empty; it will never delete a pre-existing, non-empty shared directory, even during a full package removal.
+
+**Problem:** No domain existed yet for the `Maintainer` field (`cipherlinux.org`).
 **Investigate:** Confirmed whether the `Maintainer` field requires domain ownership or verification.
-**Fix:** Used a personal Gmail address instead perfectly valid for local/early-stage package development.
+**Fix:** Used a personal Gmail address instead — perfectly valid for local/early-stage package development.
 **Key Lesson:** The `Maintainer` field is just a contact reference with no domain verification requirement; it can be updated with a one-line change and rebuild once CIPHER Linux has its own domain.
 
 ##Key Commands Table
