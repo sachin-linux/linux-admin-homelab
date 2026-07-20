@@ -148,14 +148,14 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | P10 | Real DevOps Project | 🆕 Upcoming |
 | Module | Topic | Status |
 |------|------|------|
-| O1 | Boot Process | 🆕 Upcoming |
-| O2 | Package Building (.deb) | 🆕 Upcoming |
-| O3 | Live-build / ISO | 🆕 Upcoming |
+| O1 | Boot Process | ✅ Completed  |
+| O2 | Package Building (.deb) | ✅ Completed |
+| O3 | Live-build / ISO | ✅ Completed |
 | O4 | Kernel Basics | 🆕 Upcoming |
 | O5 | Custom Repo | 🆕 Upcoming |
 | O6 | Calamares Installer | 🆕 Upcoming |
 | O7 | Branding-Release | 🆕 Upcoming |
-| 08 | DistorWatch-Submission |
+| 08 | DistorWatch-Submission | 🆕 Upcoming |
 ---
 ## Real-World Troubleshooting Scenarios
 - Troubleshooting SSH connection failures
