@@ -115,6 +115,61 @@ The `.chroot` suffix scopes the source to the build stage only - `localhost:8000
 | Command | Purpose |
 |---|---|
 | `reprepro -b <path> includedeb <dist> <deb>` | Add a package to the custom repo |
-| `mount \| grep <name>` | Check mount flags (e.g.detect `nodev` | 
+| `mount \| grep <name>` | Check mount flags (e.g.detect `nodev)` |
+| `mount -o remount.dev <path>` | Temporarily allow device node creation |
+| `lb clean --chroot` / `--binary` | Clean a specific live-build stage | 
+| `ls.build/` | Inspect live-build stage completion markers |
+| `sudo unsquashfs -l <squashfs> \| grep <pkg>` | Verify a package is genuinely inside the bootable image |
+| `grep "^Package: <pkg>" chroot/var/lib/dpkg/status` | Verify install state inside the chroot |
+
+### The Test Package - 'cipher-welcome'
+
+A simple bash onboarding script, used as the test package for this whole pipeline:
+
+```bash 
+#!/bin/bash
+echo "======================================="
+echo "Welcome to CIPHER Linux"
+echo "======================================="
+echo ""
+echo "Checking your setup..."
+echo "User: $(whoami)"
+echo "Shell: $SHELL"
+echo "Kernel: $(uname -r)
+echo ""
+echo "You're all set. Happy hacking."
+```
+
+Same pattern as Kali/Ubuntu's MOTD scripts (`/etc/update-motd.d/`) - a lightweight identity/onboarding touch, run on demand rather than at login. No GUI or visual desktop change is expected from this alone; brandinig/wallpaper/desktop identity is O6 scope.
+
+### Golden Rules
+
+- Never trust a "build successful" message alone - verify the actual artifact.
+- Config parsers that hard-fail on typos are doing you a favour check for invisible whitescape with `cat -A`.
+- Auto-mounted external drives often carry `nodev` / `nosuid` - expect this to break chroot-based builds.
+- `list.chroot` config makes infrastructure reproducible; a manual `apt install` inside a live chroot does not survive a rebuild.
+- Always re-verify stage-tracking state (`build/`) after any `lb clean` command.
+- A live-booted ISO (no persistence) resets ALL changes on reboot - only what's baked into the squashfs survives.
+
+### Skills Gained
+
+- Building and signing a custom APT repository with `reprepro` and GPG.
+- Wiring a custom repo into a `live-build` pipeline via `config/archives/*.chroot`
+- Debugging `live-build` stage-marker desync issues (bootstrap and binary stages)
+- Diagnosing cascading dependency failures back to a single root cause (mount flags)
+- Verifying build artifacts directly (squashfs contents, dpkg status, timestamps) instead of trusting exit codes
+- Understanding live-boot vs persisent storage behaviour
+
+### Environment Used 
+
+| Component | Detail |
+|---|---|
+| Host Machine | Kali Linux |
+| Kernel | `7.0.12+kali-amd64` |
+| Build Tool | `live-build 20250814+kali3` | 
+| Key Tools | `reprepro`, `gnupg`, `unsquashfs`, `python3 -m http.server` |
+| Test Package | `cipher-welcome` (custom `.deb`, used to prove the signed repo pipeline) | 
+| Build Storage | External ext4 drive (`run/media/neo/Games`) |
+| Remote Repo | github.com/sachin-linux/linux-admin-homelab | 
 
 
