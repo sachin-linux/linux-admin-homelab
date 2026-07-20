@@ -96,8 +96,9 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | O3 | Live-build / ISO |
 | O4 | Kernel Basics |
 | O5 | Custom Repo |
-| O6 | Branding & Release |
-| O7 | DistroWatch Submission |
+| O6 | Calamares Installer |
+| O7 | Branding-Release |
+| 08 | DistroWatch-Sunmission |
 ---
 ## Learning Progress
 | Module | Topic | Status |
@@ -152,8 +153,9 @@ All labs are performed on a Linux environment using **VirtualBox + Ubuntu/Kali**
 | O3 | Live-build / ISO | 🆕 Upcoming |
 | O4 | Kernel Basics | 🆕 Upcoming |
 | O5 | Custom Repo | 🆕 Upcoming |
-| O6 | Branding & Release | 🆕 Upcoming |
-| O7 | DistroWatch Submission | 🆕 Upcoming |
+| O6 | Calamares Installer | 🆕 Upcoming |
+| O7 | Branding-Release | 🆕 Upcoming |
+| 08 | DistorWatch-Submission |
 ---
 ## Real-World Troubleshooting Scenarios
 - Troubleshooting SSH connection failures
